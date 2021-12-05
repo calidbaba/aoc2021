@@ -53,7 +53,6 @@ def part2(A):
         y2 = int(temp2[1])
 
         if x1 != x2 and y1 != y2:
-            print("vertical")
             #vertical
             largestx = x2
             smallestx = x1
@@ -132,5 +131,5 @@ def parseFile(file_name):
     return [i.rstrip() for i in open(file_name, "r")]
 
 inp = parseFile(file_name)
-# print(part1(inp))
-print(part2(inp))
+print("part1: ", part1(inp))
+print("part2: ", part2(inp))
